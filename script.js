@@ -108,6 +108,8 @@ placements.sort((a, b) => a.row - b.row || a.column - b.column).forEach((placeme
 const crosswordCellMap = new Map();
 for (let row = 0; row < boardSize; row += 1) {
   for (let column = 0; column < boardSize; column += 1) {
+    const square = document.createElement('div');
+    square.className = 'crossword-square';
     const cell = document.createElement('input');
     cell.className = board[row][column] ? 'crossword-cell' : 'crossword-cell crossword-block';
     cell.type = 'text';
@@ -116,9 +118,21 @@ for (let row = 0; row < boardSize; row += 1) {
     cell.dataset.row = row;
     cell.dataset.column = column;
     cell.setAttribute('aria-label', `Row ${row + 1}, column ${column + 1}`);
-    if (board[row][column]) crosswordCellMap.set(`${row}-${column}`, cell);
-    else cell.disabled = true;
-    crosswordGrid.appendChild(cell);
+    if (board[row][column]) {
+      crosswordCellMap.set(`${row}-${column}`, cell);
+      const entryNumber = numberMap.get(`${row}-${column}`);
+      if (entryNumber) {
+        const number = document.createElement('span');
+        number.className = 'crossword-number';
+        number.textContent = entryNumber;
+        square.appendChild(number);
+      }
+    } else {
+      cell.disabled = true;
+      square.classList.add('crossword-square-block');
+    }
+    square.appendChild(cell);
+    crosswordGrid.appendChild(square);
   }
 }
 
