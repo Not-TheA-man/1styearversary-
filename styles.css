@@ -265,7 +265,7 @@ h1 em {
 .crossword-clues { padding-top: 0.25rem; }
 .clue-label { margin: 0 0 0.8rem; color: #a34f3c; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; }
 .clue-placeholder { margin: 0; color: rgba(123, 61, 49, 0.78); font-family: 'Caveat', cursive; font-size: 1.65rem; line-height: 0.9; }
-.clue-list { margin: 0 0 1.2rem; padding-left: 1.4rem; color: #5c3930; font-size: 0.68rem; line-height: 1.25; }
+.clue-list { margin: 0 0 1.2rem; padding-left: 0; color: #5c3930; font-size: 0.68rem; line-height: 1.25; list-style: none; }
 .clue-list li { margin-bottom: 0.38rem; }
 .clue-list strong { color: #a34f3c; }
 .crossword-actions { display: flex; gap: 0.55rem; margin-top: 1.4rem; }

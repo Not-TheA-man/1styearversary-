@@ -142,7 +142,7 @@ function addClues(selector, direction) {
   const list = document.querySelector(selector);
   placements.filter((placement) => placement.direction === direction).sort((a, b) => a.number - b.number).forEach((placement) => {
     const item = document.createElement('li');
-    item.textContent = placement.clue;
+    item.innerHTML = `<strong>${placement.number}.</strong> ${placement.clue}`;
     list.appendChild(item);
   });
 }
