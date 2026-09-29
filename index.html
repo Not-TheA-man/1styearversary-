@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2d211d" />
+    <title>One year with my pitbull ji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="anniversary-page">
+      <div class="photo-wash" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <p class="tiny-label">30.09.2026</p>
+        <p class="tiny-label topbar-note">chapter one</p>
+      </header>
+
+      <section class="hero" aria-labelledby="anniversary-title">
+        <p class="eyebrow">a little love letter</p>
+        <h1 id="anniversary-title">
+          <span>To our</span>
+          <span>1st year</span>
+          <span>together</span>
+          <em>meri pitbull ji</em>
+        </h1>
+        <button class="open-note" type="button" aria-expanded="false" aria-controls="love-note">
+          <span>open our year</span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </button>
+      </section>
+
+      <aside class="photo-caption" aria-label="Anniversary photo caption">
+        <span class="caption-line"></span>
+        <p>still my favourite<br />place to be</p>
+      </aside>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span>keep scrolling</span>
+        <span class="scroll-line"></span>
+      </div>
+
+      <section class="love-note" id="love-note" aria-hidden="true">
+        <button class="close-note" type="button" aria-label="Close love note">×</button>
+        <p class="note-kicker">always looking at you</p>
+        <div class="memory-grid">
+          <figure class="memory-photo">
+            <img src="image-1790701463062.png" alt="A birthday moment together at the restaurant" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790701743879.png" alt="A sunny park selfie together" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790701765511.png" alt="A happy selfie together on a ride" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790701821497.png" alt="A sweet moment together at the table" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790702160961.png" alt="A close selfie together at the airport" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790702176167.png" alt="A warm moment together while shopping" />
+          </figure>
+          <figure class="memory-photo">
+            <img src="image-1790702196652.png" alt="A playful moment together at the table" />
+          </figure>
+        </div>
+        <p class="signature">more of us to come ♡</p>
+        <button class="page-next" type="button" aria-controls="next-page">next <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section class="next-page" id="next-page" aria-hidden="true">
+        <button class="close-note back-button" type="button" aria-label="Go back to our photos">←</button>
+        <p class="note-kicker">page two · the obvious truth</p>
+        <h2>yeah, she loves me a lot.<br />she yearns for me itna.<br />bro can't be without me.<br /><em>i'm her heart, and ik.</em><br />she down bad for me too.</h2>
+        <div class="recent-grid" aria-label="More moments together">
+          <figure><img src="image-1790703043957.png" alt="A funny close-up moment together" /></figure>
+          <figure><img src="image-1790703057789.png" alt="A playful party moment together" /></figure>
+          <figure><img src="image-1790703121745.png" alt="A relaxed moment together at the restaurant" /></figure>
+          <figure><img src="image-1790703155270.png" alt="A sweet birthday moment together" /></figure>
+          <figure><img src="image-1790703177834.png" alt="A birthday celebration together" /></figure>
+          <figure><img src="image-1790703444666.png" alt="A portrait of her with a flower in her hair" /></figure>
+          <figure><img src="image-1790703494112.png" alt="A close-up portrait outdoors" /></figure>
+          <figure><img src="image-1790703603019.png" alt="A candid portrait in a cafe" /></figure>
+          <figure><img src="image-1790703641203.png" alt="A playful video call moment" /></figure>
+          <figure><img src="image-1790703714401.png" alt="A smiling portrait outdoors" /></figure>
+        </div>
+        <p class="signature">case closed ♡</p>
+        <button class="page-next final-next" type="button" aria-controls="crossword-page">next <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section class="crossword-page" id="crossword-page" aria-hidden="true">
+        <button class="close-note crossword-back" type="button" aria-label="Go back to the previous page">←</button>
+        <p class="note-kicker">final page · our year in clues</p>
+        <h2 class="crossword-title">our little<br /><em>love crossword</em></h2>
+        <p class="crossword-intro">Fill in the moments when the clues arrive. Every square is waiting for a memory.</p>
+        <div class="crossword-layout">
+          <div class="crossword-grid" role="grid" aria-label="Anniversary crossword board"></div>
+          <div class="crossword-clues">
+            <div>
+              <p class="clue-label">across</p>
+              <ol class="clue-list clue-across"></ol>
+            </div>
+            <div>
+              <p class="clue-label">down</p>
+              <ol class="clue-list clue-down"></ol>
+            </div>
+          </div>
+        </div>
+        <div class="crossword-actions">
+          <button class="crossword-control crossword-check" type="button">check</button>
+          <button class="crossword-control crossword-clear" type="button">clear</button>
+        </div>
+        <p class="crossword-status" role="status" aria-live="polite">a blank little beginning</p>
+      </section>
+
+      <aside class="music-player" aria-label="To Love by Suki Waterhouse">
+        <audio id="background-music" src="to-love.mp3" preload="metadata" controls loop></audio>
+        <button id="music-trigger" type="button">play our song</button>
+        <span id="music-status" role="status" aria-live="polite"></span>
+      </aside>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
